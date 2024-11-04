@@ -1,14 +1,15 @@
 # OSCP_Tools
 
 ## Active Directory
+- **Get-SPN.ps1** - Retrieves Service Principal Names in AD, commonly used in Kerberoasting attacks.
 - **GetCLSID.ps1** - Extracts CLSID information for COM objects, sometimes useful in AD contexts.
 - **GetNPUsers.py** - Requests Ticket-Granting Tickets (TGTs) for Active Directory accounts without pre-authentication enabled, allowing brute-force attacks on the returned ticket hashes.
-- **Get-SPN.ps1** - Retrieves Service Principal Names in AD, commonly used in Kerberoasting attacks.
 - **Invoke-Kerberoast.ps1** - Extracts Kerberos tickets for offline cracking.
-- **PowerView.ps1** - PowerShell script for comprehensive AD enumeration, useful for gathering domain information.
 - **PowerMad.ps1** - Creates and manages machine accounts in AD, often used in AD exploitation scenarios.
+- **PowerView.ps1** - PowerShell script for comprehensive AD enumeration, useful for gathering domain information.
 - **SharpGPOAbuse.exe** - Exploits Group Policy Objects (GPOs) to gain elevated privileges in a Windows Active Directory environment by modifying or hijacking GPOs to introduce malicious scripts or commands.
-- **SharpHound.exe, SharpHound.ps1** - Collects AD data for BloodHound, identifying relationships, permissions, and attack paths in AD.
+- **SharpHound.exe** - Collects AD data for BloodHound, identifying relationships, permissions, and attack paths in AD.
+- **SharpHound.ps1** - PowerShell script implementation of SharpHound.
 - **windapsearch.py** - Performs LDAP enumeration tool designed for Windows environments, allowing attackers to query and extract information from Active Directory, such as user accounts, groups, and permissions, to aid in privilege escalation or lateral movement.
 
 ## Client Side Attacks
@@ -46,10 +47,10 @@
 - **Invoke-RunasCs.ps1** - Executes commands as another user, useful for privilege escalation.
 - **LinEnum.sh** - A comprehensive Linux privilege escalation script that automates the discovery of potential misconfigurations, vulnerable permissions, and exploitable binaries, often used for post-exploitation in penetration testing.
 - **linuxprivchecker.py** - A detailed Linux privilege escalation checker that searches for misconfigurations, weak permissions, and vulnerable kernel modules, assisting in identifying escalation paths on Linux systems.
+- **peass** - A set of privilege escalation auditing scripts (`linpeas`, `winpeas`) for Linux and Windows systems. These tools systematically identify misconfigurations, weak permissions, and exploitable services that may lead to privilege escalation.
 - **PowerUp.ps1** - Searches for privilege escalation vectors on Windows.
 - **PrivescCheck.ps1** - Checks Windows configurations for privilege escalation vulnerabilities.
 - **SeManageVolumeExploit.exe** - An exploit targeting systems where the `SeManageVolume` privilege is granted, allowing unprivileged users to escalate privileges by manipulating volume-level permissions.
-- **peass** - A set of privilege escalation auditing scripts (`linpeas`, `winpeas`) for Linux and Windows systems. These tools systematically identify misconfigurations, weak permissions, and exploitable services that may lead to privilege escalation.
 
 ### `peass` Subfolder Contents
 - **json2html.py, json2pdf.py** - Converts output to HTML and PDF.

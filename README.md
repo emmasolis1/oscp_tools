@@ -30,6 +30,10 @@
 - **extractor.sh** - Helper script for extracting Git data.
 
 ## Network Utilities
+- **chisel_linux** - TCP/UDP tunneling tools for network redirection and port forwarding.
+- **chisel_windows** - Windows version of Chisel.
+- **ligolo_agent_linux / ligolo_agent_windows.exe** - Ligolo tunneling agents (clients), used for creating secure reverse tunnels.
+- **ligolo_proxy_linux** - Ligolo proxy server for managing tunneling connections.
 - **nc** - Linux version of Netcat.
 - **nc.exe** - Windows version of Netcat.
 - **nc64.exe** - 64-bit version of Netcat.
